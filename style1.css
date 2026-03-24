@@ -1,0 +1,29 @@
+/* Container que segura todos os cards */
+.grid-container {
+    display: flex;          /* Alinha os itens em linha */
+    flex-wrap: wrap;       /* Se não couber na tela, pula para a linha de baixo */
+    gap: 20px;             /* Espaço entre um card e outro */
+    justify-content: center; /* Centraliza os cards na tela */
+    padding: 20px;
+}
+
+/* Ajuste o tamanho do card para caberem vários na mesma linha */
+.icon-card {
+    width: 180px;          /* Largura fixa para cada card */
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.icon-card img {
+    width: 100%;           /* A imagem ocupa toda a largura do card */
+    height: 250px;         /* Altura padrão de capa de anime */
+    object-fit: cover;     /* Não distorce a imagem */
+    border-radius: 10px;
+}
+
+.icon-card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}

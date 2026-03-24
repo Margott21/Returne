@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segundo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="java.js">
+</head>
+<body>
+
+    <h1>Em Alta</h1>
+
+<div class="icon-card" onclick="abrirPlayer('https://www.youtube.com')">
+  <img src="./es.png" alt="Naruto Shippuden">
+  <span>Assistir Agora</span>
+</div>
+
+<div class="icon-card" onclick="abrirPlayer('https://www.youtube.com')">
+  <img src="./re.png" alt="Re:Zero">
+  <span>Assistir Agora</span>
+</div>
+
+<div class="icon-card" onclick="abrirPlayer('https://www.youtube.com')">
+  <img src="./ui.png" alt="Jujutsu Kaisen">
+  <span>Assistir Agora</span>
+</div>
+
+<div class="icon-card" onclick="abrirPlayer('https://www.youtube.com')">
+  <img src="./op.png" alt="One Piece">
+  <span>Assistir Agora</span>
+</div>
+
+<div class="icon-card" onclick="abrirPlayer('https://www.youtube.com')">
+  <img src="./my.png" alt="My Hero Academia">
+  <span>Assistir Agora</span>
+</div>
+
+<!-- O restante do Modal permanece igual -->
+<div id="modalPlayer" class="modal" onclick="fecharPlayer()">
+  <div class="modal-content" onclick="event.stopPropagation()"> <!-- Evita que o vídeo feche ao clicar nele -->
+    <iframe id="videoFrame" width="100%" height="400" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- Final do seu HTML -->
+<script>
+function abrirPlayer(url) {
+    const modal = document.getElementById('modalPlayer');
+    const iframe = document.getElementById('videoFrame');
+    
+    // Define a URL e adiciona permissões de autoplay
+    iframe.src = url; 
+    
+    // Mostra o modal
+    modal.style.display = 'flex';
+}
+
+function fecharPlayer() {
+    const modal = document.getElementById('modalPlayer');
+    const iframe = document.getElementById('videoFrame');
+    
+    modal.style.display = 'none';
+    iframe.src = ''; // Limpa o src para o vídeo parar de tocar
+}
+
+</script>
+</body>
+</html>
+
+    
+
+
+
+
+<a href="./index.html" class="botão1">Voltar para a página inicial</a>
+</body>
+</html>

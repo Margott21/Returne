@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.botão1{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+body{
+background-color: #000000;}
+
+h1 {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 50px;
+  margin: 8%;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 
+    1px 1px 0 #060202,            /*isso e a estrutura dos bolcos não esquece da anotação*/
+    2px 2px 0 #410c8c, 
+    3px 3px 0 #092c44, 
+    4px 4px 0 #370909,
+    5px 5px 10px rgb(11, 113, 176);
+    text-align: center;
+}
+
+h1 {
+  font-size:46px;
+  font-weight: 900;
+  background: linear-gradient(90deg, #2c84d6, #be1cd3);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+}
+
+h1 {
+  font-size: 80px;
+  color: transparent;
+  -webkit-text-stroke: 2px #3e017b90; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));  /*isso e pra tu mudar o fundo da coisas animal*/
+  gap: 20px;
+  padding: 40px;
+  background: #000000; 
+}
+
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+/* negocio colorido atras da imagens */
+.icon-card img {
+  width: 100%;
+  height: 110px;
+  background-color: var(--bg-color);
+  border-radius: 20px; /*  tu sabe pra que ser, Bordas bem arredondadas */
+  object-fit: contain;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* oq vai aparecer embaixo escrito  */
+.icon-card span {
+  margin-top: 10px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* EFEITO DE INTERATIVO  e não interadividade ryan (Hover) */
+.icon-card:hover {
+  transform: translateY(-5px); /* Sobe levemente */
+}
+
+.icon-card:hover img {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4); /* Sombra aumenta */
+  filter: brightness(1.1); /* Brilha levemente */
+}
+
+.icon-card:active {
+  transform: scale(0.95); /* Efeito de toque */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    border: 2px solid #ddd;
+    border-radius: 25px; /* Deixa a barra arredondada */
+    overflow: hidden;
+    width: 300px;
+    transition: 0.3s;
+}
+
+form:focus-within {
+    border-color: #007bff; /* Muda de cor quando clicado */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+input {
+    border: none;
+    padding: 10px 15px;
+    outline: none; /* Remove o contorno padrão azul */
+    width: 100%;
+    font-size: 16px;
+}
+
+button {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e2e6ea;
+}
+
+/* O Modal preenche a tela inteira e fica escondido por padrão */
+.modal {
+  display: none; /* Escondido inicialmente */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.9); /* Fundo preto semi-transparente */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Garante que fica na frente de tudo */
+}
+
+/* Caixa onde o vídeo fica centralizado */
+.modal-content {
+  width: 90%;
+  max-width: 800px;
+  background: #000;
+  border: 2px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.anime-card {
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.anime-card:hover {
+  transform: scale(1.05);
+}
+
+/* Isso garante que o modal comece escondido e ocupe a tela toda quando ativado */
+.modal {
+  display: none; /* Começa escondido */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Fundo preto transparente */
+  z-index: 9999; /* Fica na frente de tudo */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tamanho do vídeo na tela */
+.modal-content {
+  width: 90%;
+  max-width: 800px;
+}
+
